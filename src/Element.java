@@ -1,4 +1,4 @@
-public class Element {
+public class Element extends ToDoService {
 
     String name;
     boolean isDone;
