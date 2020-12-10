@@ -6,3 +6,4 @@ Command line arguments:
     -a   Adds a new task
     -r   Removes an task
     -c   Completes an task
+    -cr  Shows credits
