@@ -25,7 +25,11 @@ public class ArgumentHandler extends ToDoService {
                     break;
                 }
                 case "-r": {
-                    System.out.println("Removing a task...");
+                    if (arguments.length == 1) {
+                        System.out.println("Unable to remove: no task provided!");
+                    } else {
+                        removeTask(arguments[1]);
+                    }
                     break;
                 }
                 case "-c": {
@@ -37,7 +41,8 @@ public class ArgumentHandler extends ToDoService {
                     break;
                 }
                 default: {
-                    System.out.println("Invalid argument(s)!");
+                    System.out.println("Unsupported argument");
+                    listTasks();
                     break;
                 }
             }
